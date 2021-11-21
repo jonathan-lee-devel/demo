@@ -17,7 +17,7 @@ import lombok.ToString;
 @Entity
 public class Renter {
 
-  private static final String RENTER_ID_NAME = "renter_id";
+  public static final String RENTER_ID_NAME = "renter_id";
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

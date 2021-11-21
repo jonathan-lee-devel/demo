@@ -23,9 +23,9 @@ import lombok.ToString;
 @Entity
 public class Expense {
 
-  private static final String EXPENSE_ID_NAME = "expense_id";
-  private static final String IS_ACTIVE_NAME = "is_active";
-  private static final String START_DATE_NAME = "start_date";
+  public static final String EXPENSE_ID_NAME = "expense_id";
+  public static final String IS_ACTIVE_NAME = "is_active";
+  public static final String START_DATE_NAME = "start_date";
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

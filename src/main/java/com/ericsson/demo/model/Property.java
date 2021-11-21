@@ -19,7 +19,7 @@ import lombok.ToString;
 @Entity
 public class Property {
 
-  private static final String PROPERTY_ID_NAME = "property_id";
+  public static final String PROPERTY_ID_NAME = "property_id";
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
