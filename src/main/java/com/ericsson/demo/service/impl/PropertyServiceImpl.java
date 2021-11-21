@@ -20,11 +20,8 @@ public class PropertyServiceImpl implements PropertyService {
   @Override
   public PropertyDto findByPropertyId(String propertyId) {
     final Property property = this.propertyRepository.findByPropertyId(propertyId);
-    if (property == null) {
-      return null;
-    }
 
-    return this.propertyMapper.propertyToPropertyDto(property);
+    return (property == null) ? null : this.propertyMapper.propertyToPropertyDto(property);
   }
 
 }

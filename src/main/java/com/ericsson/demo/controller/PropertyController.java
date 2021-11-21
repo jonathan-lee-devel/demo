@@ -21,11 +21,8 @@ public class PropertyController {
       @PathVariable final String propertyId) {
     final PropertyDto propertyDto = this.propertyService.findByPropertyId(propertyId);
 
-    if (propertyDto == null) {
-      return ResponseEntity.notFound().build();
-    }
-
-    return ResponseEntity.ok(propertyDto);
+    return (propertyDto == null) ? ResponseEntity.notFound().build()
+        : ResponseEntity.ok(propertyDto);
   }
 
 }
