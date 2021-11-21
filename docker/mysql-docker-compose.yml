@@ -1,0 +1,18 @@
+version: '3'
+
+volumes:
+  mysql_data:
+    driver: local
+
+services:
+  mysql:
+    image: mysql
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: demo
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+    ports:
+      - "3306:3306"
