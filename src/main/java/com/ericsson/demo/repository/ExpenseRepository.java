@@ -9,4 +9,6 @@ public interface ExpenseRepository extends JpaRepository<Expense, Long> {
   @Nullable
   Expense findByExpenseId(final String expenseId);
 
+  Expense deleteByExpenseId(final String expenseId);
+
 }

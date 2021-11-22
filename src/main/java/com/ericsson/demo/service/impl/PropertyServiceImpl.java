@@ -9,8 +9,8 @@ import lombok.RequiredArgsConstructor;
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 
-@RequiredArgsConstructor
 @Service
+@RequiredArgsConstructor
 public class PropertyServiceImpl implements PropertyService {
 
   private final PropertyRepository propertyRepository;
